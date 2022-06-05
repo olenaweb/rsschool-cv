@@ -1,0 +1,20 @@
+body {
+   font-family: 'Montserrat', sans-serif;
+   background: #eaebee;
+}
+
+/* main style */
+.main {
+   display: flex;
+   flex-direction: row-reverse;
+   width: 1000px;
+   margin: 0 auto;
+}
+
+/* maincontent style */
+.maincontent {
+   background: #FFFFFF;
+   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+   padding-top: 10px;
+   padding-left: 40px;
+}
