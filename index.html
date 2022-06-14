@@ -1,45 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/show.css">
+  <title>Document</title>
 </head>
+
 <body>
- <!--Main-->
- <div class="main">
-   <!--MainContent-->
-   <div class="maincontent">
-     <!--About-->
-     <div class="about"></div>
-     <h1 class="about_name">Olena Nevzorova</h1>
-     <div class="about_description">
-       <p>
-         I have now started studies at RS SCHOOL. My goal is to get a
-         retraining and start a new stage of my professional activity as a
-         Front-end developer.
-       </p>
-     </div>
-   </div>
-   <aside class="sidebar">
-     <img src="olena.jpg" alt="Olena Nevzorova" class="foto" >
-     <!--Contacts-->
-     <div class="contacts">
-       <h3 class="sidebar_title">Contacts</h3>
-       <p><b>Address:</b><br>
-          Voronezska st., Zaporoghghue, Ukraine
-       </p>
-       <p>
-         <a href="tel:+380684525572" class="contact_link">+380684525572</a><br>
-         <a href="mailto:olena.nevzorova@gmail.com" class="contact_link">olena.nevzorova@gmail.com</a>
-       </p>
-       <p><b>Github:</b>olenaweb</p>
-       <p><b>Discord:</b>olenaweb</p>
-       <p><b>Telegram:</b>olenaweb</p>
-     </div>
-   </aside>
-</div>
+  <div class="container">
+    <aside class="aside-me">
+      <section>
+        <div>
+          <img src="./assets/images/olena.jpg" alt="Olena Nevzorova" style="width:100%">
+        </div>
+        <div>
+          <h2>My Contact Info</h2>
+          <table>
+            <tr>
+              <td>Address</td>
+              <td>:</td>
+              <td>Zaporoghghue, Ukraine.</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>:</td>
+              <td><a href="tel:+380684525572" class="contact-link">+380684525572</a></td>
+            </tr>
+            <tr>
+              <td>E-mail</td>
+              <td>:</td>
+              <td><a href="mailto:olena.nevzorova@gmail.com" class="contact-link">olena.nevzorova@gmail.com</a>
+              </td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td>:</td>
+              <td>olenaweb</td>
+            </tr>
+            <tr>
+              <td>Dickord</td>
+              <td>:</td>
+              <td>olenaweb</td>
+            </tr>
+            <tr>
+              <td>Telegram</td>
+              <td>:</td>
+              <td>olenaweb</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>GIT</li>
+            <li>JavaScript</li>
+            <li><a href="https://olenaweb.github.io/rsschool-cv/" class="contact-link">Project</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Languages</h2>
+          <ul>
+            <li>Ukraine</li>
+            <li>Russian</li>
+            <li>English: Pre-Intermediate (CEFR A2+)</li>
+          </ul>
+        </div>
+        <div class="rsschool">
+        </div>
+      </section>
+    </aside>
+
+    <main class="main-me">
+      <header>
+        <h1 class="about-name">Olena Nevzorova</h1>
+        <h3>Junior Front-end Developer</h3>
+        <div>
+          <h2>Summary</h2>
+          <p>I have now started studies at RS SCHOOL. My goal is to get a retraining and start a new stage of my
+            professional activity as a Front-end developer.</p>
+        </div>
+      </header>
+      <section>
+        <div>
+          <h2>Work Experience</h2>
+          <p><b>Leading System Administrator National Bank of Ukraine</b></p>
+          <ul>
+            <li>Administration of servers and network equipment based on Cisco Switches.</li>
+            <li>Installation and maintenance of server systems on server hardware (Blade System),VMware ESX
+              virtualization.</li>
+            <li>Administration Microsoft Active Directory Service and Internet Servises</li>
+          </ul>
+          <p><b>Leading Software Engineer Zaporizhzhya Transformer Plant</b></p>
+          <ul>
+            <li>Software development based on MS SQL Server.</li>
+            <li>Software Development based on Oracle database.</li>
+            <li>Administration Microsoft SQL Server Database, Oracle database.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <p>National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute”. <br>System
+          engineer
+        </p>
+      </section>
+      <section>
+        <h2>Code examples</h2>
+        <div class="code-me">
+          <code>
+                var myNumber = 32;
+                document.getElementById("demo").innerHTML =
+                  "32 = " Десятичный " + myNumber.toString(10) + 
+                  " Шестнадцатеричный " + myNumber.toString(16) + 
+                  " Восьмеричный " + myNumber.toString(8) + 
+                  " Двоичный " + myNumber.toString(2);
+          </code>
+        </div>
+      </section>
+      <footer class="footer-me">
+        <nav class="footer-nav">
+          <ul class="footer-nav-li">
+            <li>
+              <a href="https://github.com/olenaweb"><i>Github</i></a>
+            </li>
+            <li>
+              <a href="https://rs.school/js-stage0/"><i>RS School</i></a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-year">2022</p>
+      </footer>
+
+    </main>
+
+  </div>
 </body>
+
 </html>
