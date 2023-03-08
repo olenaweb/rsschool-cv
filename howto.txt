@@ -1,0 +1,88 @@
+init: - используется для начала проекта/таска. Примеры:
+init: start youtube-task
+init: start mentor-dashboard task
+feat: - это реализованная новая функциональность из технического задания (добавил поддержку зумирования, добавил footer, добавил карточку продукта). Примеры:
+feat: add basic page layout
+feat: implement search box 
+feat: implement request to youtube API
+feat: implement swipe for horizontal list
+feat: add additional navigation button
+feat: add banner
+feat: add social links
+feat: add physical security section
+feat: add real social icons
+fix: - исправил ошибку в ранее реализованной функциональности. Примеры:
+fix: implement correct loading data from youtube
+fix: change layout for video items to fix bugs
+fix: relayout header for firefox
+fix: adjust social links for mobile
+refactor: - новой функциональности не добавлял / поведения не менял. Файлы в другие места положил, удалил, добавил. Изменил форматирование кода (white-space, formatting, missing semi-colons, etc). Улучшил алгоритм, без изменения функциональности. Примеры:
+refactor: change structure of the project
+refactor: rename vars for better readability
+refactor: apply eslint
+refactor: apply prettier
+docs: - используется при работе с документацией/readme проекта. Примеры:
+docs: update readme with additional information
+docs: update description of run() method
+--------------------------------------------------------------
+git config --list
+Unsafe repository (REPO) is owned by someone else
+git config --global --add safe.directory <path to repository>
+But as you mentioned it didn't work, I found this Stackoverflow thread where alternative solution are being discussed, and specifically for Ubuntu I found the following recommendations :
+
+Create a .gitconfig file in /var/www directory, which is the home for www-data user, with the following content :
+[safe]
+      directory = /repository/path
+Add the folder to the safe.directory list at the system level
+git config --system --add safe.directory /home/repo
+If using git > 2.36, you can use the wildcard to add all folders to safe.directory list :
+git config --global --add safe.directory '*'
+Change the owner of the repository folder to the user which is running the git command :
+sudo chown -R username:group /home/repo
+====================================================================================
+git init
+git status 
+Посмотреть непроиндексированные изменения:
+git diff 
+история commits
+git log
+change from last commit
+git show  
+Откатить файл до последнего коммита
+git checkout index.js
+Отменить последний коммит
+git revert HEAD 
+Исправить последний коммит
+git commit --amend -m 'Правильное сообщение коммита'
+-----------------------------
+git clone https://github.com/rolling-scopes-school/olenaweb-JSFEPRESCHOOL2022Q2.git
+
+git config user.name "olenaweb"
+
+git checkout -b travel  создать ветку
+git branch
+--------------------------
+git status
+git add -A
+Коммиты должны начинаться с префиксов: init:, feat: , fix: , refact
+git commit -m'init: create files  and directories'
+git commit -m'feat: add some lines'
+git commit --amend [-m'сообщение']
+git push origin travel 
+git log
+-------------------------
+git pull origin fix2 забрать измененную ветку с origin
+забрать в свою локальную master изменения , сделанные в удаленном репо в ветке master
+get pull origin master
+--------------------------
+Отправить изменения в удаленный репозиторий.
+-u — в случае, если находимся, например в не основной ветке yellow-design,
+ но хотим установить связь с основной веткой master.
+git push -u origin master 
+git push origin <НАЗВАНИЕ ВЕТКИ> (git push origin gh-pages)
+--------------------------
+git fetch origin (только забирает коммиты и все ветки с сервера)
+удалить ветку
+git branch -d имя ветки
+перключиться на ветку
+git checkout master
