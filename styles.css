@@ -8,9 +8,13 @@ body {
   min-width: 600px;
   min-height: 100vh;
   font-family: Arial, Futura, sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   background-color: #e4e4e4;
   padding: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .container {
@@ -25,15 +29,23 @@ body {
 
 .aside-inf {
   padding: 1rem;
-  width: 30%;
+  width: 35%;
   color: white;
   background-color: #4d4d4d;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: stretch;
+  align-items: center;
 }
 
+.aside-inf>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* border: 5px solid rebeccapurple; */
+  height: 100%;
+}
 
 .contact-link {
   color: #a17f19ee;
@@ -44,15 +56,13 @@ body {
 }
 
 .rsschool {
-  margin: 40 auto 0;
-  margin-top: 40px;
+  margin-top: 15px;
   text-align: center;
 }
 
 .foto-container {
   text-align: center;
   width: 100%;
-  /* margin: 0 auto; */
 }
 
 .image {
@@ -63,15 +73,15 @@ body {
   width: 30%;
 }
 
-.main-me {
-  padding: 1rem;
-  width: 70%;
+.main-inf {
+  padding: 0 2rem 0;
+  width: 65%;
   color: #171b2c;
   background-color: #ffffff;
   overflow: auto;
 }
 
-.code-me {
+.code-pattern {
   color: #041562;
   background-color: #e1e1df;
 }
@@ -79,46 +89,71 @@ body {
 .about-name {
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
+  font-size: 3rem;
+  line-height: 3.2rem;
   color: #000000;
   margin-bottom: 25px;
 }
 
 /* footer */
 .footer {
-  margin: 0 auto;
+  margin: 50% auto 0;
   padding: 0;
-  width: 200px;
+  width: 70%;
   color: #000000;
 }
 
-.footer-nav {
+/* .footer-nav {
   padding: 20px;
-}
+} */
 
-.footer-nav-li {
+.footer-link {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding-left: 0;
+  width: 100%;
 }
 
-.footer-nav-li li {
+.footer-link li {
   list-style-type: none;
 }
 
-.footer-nav-li li a,
+.footer-link li a,
 .footer-year {
   color: #ecb307ee;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
-.footer-nav-li li a:hover {
+.footer-link li a:hover {
   color: #599cd3;
 }
 
 .footer-year {
   text-align: center;
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
 }
