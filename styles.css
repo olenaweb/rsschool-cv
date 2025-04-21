@@ -6,7 +6,6 @@ body {
   margin: 0 auto;
   max-width: 1024px;
   min-width: 600px;
-  min-height: 100vh;
   font-family: Arial, Futura, sans-serif;
   font-size: 1rem;
   background-color: #e4e4e4;
@@ -19,7 +18,6 @@ body {
   grid-template-rows: 1fr;
   margin: auto;
   max-width: 1024px;
-  border: black solid 1px;
   -webkit-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
   box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
@@ -44,10 +42,7 @@ body {
 
 .contact {
   display: grid;
-  /* grid-template-columns: 1fr 5fr; */
-  /* grid-template-rows: repeat(13, auto); */
   column-gap: 5px;
-
 }
 
 .head-contact {
@@ -78,13 +73,12 @@ body {
   padding: 0 2rem 0;
   color: #171b2c;
   background-color: #ffffff;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .footer {
-  margin: 50% auto 0;
+  margin: 31% auto 0;
   padding: 0;
-  width: 70%;
   color: #000000;
 }
 
