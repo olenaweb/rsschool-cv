@@ -13,38 +13,46 @@ body {
   padding: 2rem;
 }
 
-p {
-  font-size: 1rem;
-}
-
 .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
   margin: auto;
   max-width: 1024px;
   border: black solid 1px;
-  display: flex;
   -webkit-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
   -moz-box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
   box-shadow: 1px 81px 100px 5px rgba(0, 0, 0, 0.38);
 }
 
 .aside-inf {
-  padding: 1rem;
-  width: 35%;
-  color: white;
-  background-color: #4d4d4d;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: center;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: #4d4d4d;
 }
 
-.aside-inf>section {
+.aside-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
-  /* border: 5px solid rebeccapurple; */
-  height: 100%;
+}
+
+.contact {
+  display: grid;
+  /* grid-template-columns: 1fr 5fr; */
+  /* grid-template-rows: repeat(13, auto); */
+  column-gap: 5px;
+
+}
+
+.head-contact {
+  grid-column: 1 / 3;
+  margin: 10px auto;
 }
 
 .contact-link {
@@ -55,11 +63,6 @@ p {
   color: #599cd3;
 }
 
-.rsschool {
-  margin-top: 15px;
-  text-align: center;
-}
-
 .foto-container {
   text-align: center;
   width: 100%;
@@ -67,35 +70,17 @@ p {
 
 .image {
   width: 100%;
-}
-
-.rss {
-  width: 30%;
+  height: auto;
 }
 
 .main-inf {
+  width: 100%;
   padding: 0 2rem 0;
-  width: 65%;
   color: #171b2c;
   background-color: #ffffff;
   overflow: auto;
 }
 
-.code-pattern {
-  color: #041562;
-  background-color: #e1e1df;
-}
-
-.about-name {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.2rem;
-  color: #000000;
-  margin-bottom: 25px;
-}
-
-/* footer */
 .footer {
   margin: 50% auto 0;
   padding: 0;
@@ -103,17 +88,13 @@ p {
   color: #000000;
 }
 
-/* .footer-nav {
-  padding: 20px;
-} */
-
 .footer-link {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding-left: 0;
   width: 100%;
+  gap: 20px;
+  padding: 0;
 }
 
 .footer-link li {
@@ -134,26 +115,16 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 1600px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width: 900px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 @media screen and (max-width: 600px) {
-  html {
-    font-size: 12px;
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
   }
 }
